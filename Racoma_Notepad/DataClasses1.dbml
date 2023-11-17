@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="racoma_log_in_note" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-1MVDPJFL\SQLEXPRESS;Initial Catalog=racoma_log_in_note;Integrated Security=True" SettingsObjectName="Racoma_Notepad.Properties.Settings" SettingsPropertyName="racoma_log_in_noteConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.log_in" Member="log_ins">
+    <Type Name="log_in">
+      <Column Name="id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="pass" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="usertype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.userlogin" Method="userlogin">
+    <Parameter Name="username" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="password" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="userloginResult">
+      <Column Name="Username" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="pass" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="usertype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.user_type" Method="user_type">
+    <Parameter Name="username" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="password" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
