@@ -14,6 +14,7 @@ namespace Racoma_Notepad
     public partial class Register : Form
     {
         FaceRec faceRec = new FaceRec();
+        DataClasses1DataContext db = new DataClasses1DataContext();
         public Register()
         {
             InitializeComponent();
@@ -31,7 +32,8 @@ namespace Racoma_Notepad
 
         private void btnSaveImage_Click(object sender, EventArgs e)
         {
-
+            //db.inserts(tbUserID,tbUsername.Text,tbPass.Text,cbUserType);
+            //MessageBox.Show("Successfully Saved", "Save");
         }
     }
 }

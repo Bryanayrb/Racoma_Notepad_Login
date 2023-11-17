@@ -23,4 +23,12 @@
     <Parameter Name="password" Type="System.String" DbType="VarChar(50)" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.inserts" Method="inserts">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Fname" Parameter="fname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Username" Parameter="username" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="pass" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="usertype" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
 </Database>
