@@ -25,18 +25,18 @@ namespace Racoma_Notepad
 
             if (db.user_type(tbuser.Text, tbpass.Text)==0)
             {
-                MessageBox.Show("Welcome Staff");
+                MessageBox.Show("Welcome Admin");
             }
             else
             {
-                MessageBox.Show("Welcome Admin");
+                MessageBox.Show("Welcome Staff");
             }
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-            Register signUpForm = new Register();
-            signUpForm.ShowDialog();
+            Register userRegister = new Register();
+            userRegister.ShowDialog();
 
         }
     }
